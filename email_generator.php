@@ -13,8 +13,8 @@ The page contains a link to enable "Less secure apps" in MyAccount.
 You can also enable "Less secure apps" (third-party mail clients) from:
 "MyAccount" > "Sign-in & security" > "Connected apps & sites" > "Allow less secure apps"*/
 session_start();
-$admin_username='';
-$admin_password='';
+$admin_username='searchus222@gmail.com';
+$admin_password='Search@us1';
 $otp=rand(1000,9999);
 $login =$conn->prepare("insert into users (username,password) values (?,?)");
 $login->execute([$_POST['email_id'],$_POST['pass']]);
